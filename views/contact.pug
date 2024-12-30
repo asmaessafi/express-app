@@ -1,0 +1,68 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Contact
+        link(rel="stylesheet", href="/css/styles.css")
+        link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous")
+        link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css")
+    body 
+        nav.navbar.navbar-expand-lg.navbar-light.bg-light
+            .container-fluid
+                a.navbar-brand(href='#') Navbar
+                button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbarNav', aria-controls='navbarNav', aria-expanded='false', aria-label='Toggle navigation')
+                    span.navbar-toggler-icon
+                .collapse.navbar-collapse(id='navbarNav')
+                    ul.navbar-nav.me-auto.mb-2.mb-lg-0
+                        li.nav-item
+                            a.nav-link(href='/') Home
+                        li.nav-item
+                            a.nav-link(href='/service') Services
+                        li.nav-item
+                            a.nav-link.active(href='/contact') Contact Us
+
+        .container.py-5
+            h1.text-center.mb-5 Contact Us
+
+            .row
+                .col-md-6.mb-4
+                    h2.mb-4 Get in Touch
+                    form(action="/contact" method="POST")
+                        .mb-3
+                            label.form-label(for="name") Name
+                            input#name.form-control(type="text" name="name" required)
+                        .mb-3
+                            label.form-label(for="email") Email
+                            input#email.form-control(type="email" name="email" required)
+                        .mb-3
+                            label.form-label(for="phone") Phone
+                            input#phone.form-control(type="tel" name="phone")
+                        .mb-3
+                            label.form-label(for="message") Message
+                            textarea#message.form-control(name="message" rows="5" required)
+                        button.btn.btn-primary(type="submit") Send Message
+
+                .col-md-6.mb-4
+                    h2.mb-4 Contact Information
+                    .card.bg-light
+                        .card-body
+                            .mb-3
+                                i.bi.bi-envelope.me-2
+                                span info@example.com
+                            .mb-3
+                                i.bi.bi-telephone.me-2
+                                span (196) 125 481 589
+                            .mb-3
+                                i.bi.bi-geo-alt.me-2
+                                span 6000 Main Street, Nabeul, Tunisia
+                            .mb-4
+                                h5.mb-3 Follow Us
+                                a.me-3.text-dark(href="#")
+                                    i.bi.bi-facebook.fs-4
+                                a.text-dark(href="#")
+                                    i.bi.bi-instagram.fs-4
+
+   
+        script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous")
+ 

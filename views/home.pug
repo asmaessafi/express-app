@@ -1,0 +1,50 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Home
+        link(rel="stylesheet", href="/css/styles.css")
+        link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous")
+    body 
+        // Navbar (same as your contact page)
+        nav.navbar.navbar-expand-lg.navbar-light.bg-light
+            .container-fluid
+                a.navbar-brand(href='#') Navbar
+                button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbarNav', aria-controls='navbarNav', aria-expanded='false', aria-label='Toggle navigation')
+                    span.navbar-toggler-icon
+                .collapse.navbar-collapse(id='navbarNav')
+                    ul.navbar-nav.me-auto.mb-2.mb-lg-0
+                        li.nav-item
+                            a.nav-link.active(href='/') Home
+                        li.nav-item
+                            a.nav-link(href='/service') Services
+                        li.nav-item
+                            a.nav-link(href='/contact') Contact Us
+
+        // Hero Section
+        .container-fluid.bg-primary.text-white.py-5
+            .container.py-5
+                .row.align-items-center
+                    .col-lg-6
+                        h1.display-4 Welcome to Our Website
+                        p.lead "We are dedicated to providing the best services and support to our customers."
+                        button.btn.btn-light.btn-lg Get Started
+
+        // About Us Section
+        .container.py-5
+            .row.justify-content-center.text-center
+                .col-lg-8
+                    h2.display-5.mb-4 About Us
+                    p.lead We transform ordinary outdoor spaces into stunning landscapes. Our team specializes in creating sustainable and personalized gardens.
+
+        // Call to Action
+        .container-fluid.bg-light.text-dark.py-5
+            .container.text-center
+                h2 Ready to Transform Your Outdoor Space?
+                a.btn.btn-primary.btn-lg.mt-3(href='/contact') Get a Free Consultation
+
+        // Bootstrap JS
+        script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous")
+   
+            
